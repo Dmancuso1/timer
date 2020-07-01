@@ -29,7 +29,7 @@ for (let arg of args) {
   delay = (arg*1000);
   setTimeout(() => {
     console.log("BEEP", arg);
-    process.stdout.write('\x07');
+    process.stdout.write('\x07'); // this doenst make a sound!
   }, delay);
  } 
 }
